@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 
 main_dir=$(pwd)
 for sub_dir in "$main_dir"/*; do
