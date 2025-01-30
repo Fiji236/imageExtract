@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#! /bin/bash
 
 #The purpose of this script is three fold.
 # 1. Create sub_dir based on the names of present fiels eg .mkv
@@ -21,21 +21,15 @@
 #  mv $file $dir
 #done
 
-# sh v2i24.sh // Starting in the parent dir, iterate through 
-# the previously created sub_dir.
-
 main_dir=$(pwd)
 for sub_dir in "$main_dir"/*; do
-  if "$sub_dir" = false; then
-    for file in *
-    do 
+    for file in *; do
       dir=$(echo $file | cut -d. -f1)
       mkdir -p $dir
       mv $file $dir
     done
-  fi
     cd "$sub_dir" || continue
-    ffmpeg -i *.mkv -vf fps=1/10 %03d.jpg # potentially change to sh v2i24.sh. Creates an image series 1/24 .jpg
+    ffmpeg -i *.mkv -vf fps=1/10 %03d.jpg  
   done
 
 # sh v2idating.sh // Echos out the pwd, cuts and renames the previously 

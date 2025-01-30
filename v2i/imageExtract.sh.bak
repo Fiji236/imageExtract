@@ -1,4 +1,4 @@
-#! /usr/bin/env bash
+#!/bin/bash
 for D in ./*/
 do 
   if [ -d "${D}" ]

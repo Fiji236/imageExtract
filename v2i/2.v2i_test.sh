@@ -1,4 +1,4 @@
-#! /bin/bash
+#! /usr/bin/env bash
 
 #The purpose of this script is three fold.
 # 1. Create sub_dir based on the names of present fiels eg .mkv
