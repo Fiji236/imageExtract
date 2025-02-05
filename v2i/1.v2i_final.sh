@@ -1,7 +1,7 @@
 #! /usr/bin/env bash
 
 #The purpose of this script is three fold.
-# 1. Create sub_dir based on the names of present fiels eg .mkv
+# 1. Create sub_dir based on the names of present fields eg .mkv
 # 2. Move the reference files into the previously created sub_dir
 # 3. Loop through every created sub_dir form the parent/(pwd)
 #   3a. Use ffmpeg to extract 1 for every 24 frames and output
